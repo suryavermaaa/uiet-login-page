@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background settings */
+body {
+    min-height: 100vh;
+   background: url(KUM.jpg) no-repeat center center/cover;
+    font-family: sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.navbar {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.navbar a {
+    color: #258ee3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Login container */
+.container {
+    width: 400px;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(9px);
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.6em;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    color: white;
+}
+
+.form-group label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+    top: -10px;
+    font-size: 0.8em;
+    color: #ff9999;
+}
+
+.form-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+/* Login button */
+#btn {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: rgb(225, 33, 33);
+    color: white;
+}
+
+/* Paragraph styles */
+p {
+    color: white;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+p > a {
+    color: white;
+    text-decoration: none;
+}
+
+p > a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+.container {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar a {
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+    transform: scale(1.1);
+}
